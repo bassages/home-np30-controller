@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<e:propertyset xmlns:e="urn:schemas-upnp-org:event-1-0">
+    <e:property>
+        <LastChange>&lt;Event xmlns="urn:schemas-upnp-org:metadata-1-0/AVT/"&gt;&lt;InstanceID val="0"&gt;&lt;A_ARG_TYPE_InstanceID
+            val="0"&gt;&lt;/A_ARG_TYPE_InstanceID&gt;
+            &lt;CurrentTrackURI val=""&gt;&lt;/CurrentTrackURI&gt;
+            &lt;TransportStatus val="OK"&gt;&lt;/TransportStatus&gt;
+            &lt;CurrentTransportActions val="Play, Stop, Next, Previous"&gt;&lt;/CurrentTransportActions&gt;
+            &lt;NumberOfTracks val="0"&gt;&lt;/NumberOfTracks&gt;
+            &lt;A_ARG_TYPE_SeekTarget val=""&gt;&lt;/A_ARG_TYPE_SeekTarget&gt;
+            &lt;NextAVTransportURIMetaData val=""&gt;&lt;/NextAVTransportURIMetaData&gt;
+            &lt;AbsoluteCounterPosition val="0"&gt;&lt;/AbsoluteCounterPosition&gt;
+            &lt;PlaybackStorageMedium val="NONE"&gt;&lt;/PlaybackStorageMedium&gt;
+            &lt;AVTransportURIMetaData val=""&gt;&lt;/AVTransportURIMetaData&gt;
+            &lt;CurrentMediaDuration val=""&gt;&lt;/CurrentMediaDuration&gt;
+            &lt;TransportState val="PAUSED_PLAYBACK"&gt;&lt;/TransportState&gt;
+            &lt;RelativeCounterPosition val="0"&gt;&lt;/RelativeCounterPosition&gt;
+            &lt;CurrentPlayMode val="NORMAL"&gt;&lt;/CurrentPlayMode&gt;
+            &lt;RelativeTimePosition val=""&gt;&lt;/RelativeTimePosition&gt;
+            &lt;AVTransportURI val=""&gt;&lt;/AVTransportURI&gt;
+            &lt;AbsoluteTimePosition val=""&gt;&lt;/AbsoluteTimePosition&gt;
+            &lt;CurrentTrackDuration val=""&gt;&lt;/CurrentTrackDuration&gt;
+            &lt;A_ARG_TYPE_SeekMode val=""&gt;&lt;/A_ARG_TYPE_SeekMode&gt;
+            &lt;RecordMediumWriteStatus val="NOT_IMPLEMENTED"&gt;&lt;/RecordMediumWriteStatus&gt;
+            &lt;PossibleRecordQualityModes val="NOT_IMPLEMENTED"&gt;&lt;/PossibleRecordQualityModes&gt;
+            &lt;TransportPlaySpeed val="1"&gt;&lt;/TransportPlaySpeed&gt;
+            &lt;PossiblePlaybackStorageMedia val="NETWORK"&gt;&lt;/PossiblePlaybackStorageMedia&gt;
+            &lt;PossibleRecordStorageMedia val="NOT_IMPLEMENTED"&gt;&lt;/PossibleRecordStorageMedia&gt;
+            &lt;CurrentTrack val="0"&gt;&lt;/CurrentTrack&gt;
+            &lt;NextAVTransportURI val=""&gt;&lt;/NextAVTransportURI&gt;
+            &lt;CurrentTrackMetaData val=""&gt;&lt;/CurrentTrackMetaData&gt;
+            &lt;CurrentRecordQualityMode val="NOT_IMPLEMENTED"&gt;&lt;/CurrentRecordQualityMode&gt;
+            &lt;RecordStorageMedium val="NOT_IMPLEMENTED"&gt;&lt;/RecordStorageMedium&gt;
+            &lt;/InstanceID&gt;
+            &lt;/Event&gt;
+        </LastChange>
+    </e:property>
+</e:propertyset>

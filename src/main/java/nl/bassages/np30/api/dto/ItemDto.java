@@ -2,11 +2,13 @@ package nl.bassages.np30.api.dto;
 
 import java.util.List;
 
-public class Item {
+public class ItemDto {
 
     private String id;
     private String title;
-    private List<Item> children;
+    private String duration;
+    private Integer originalTrackNumber;
+    private List<ItemDto> children;
     private boolean isContainer;
 
     public String getId() {
@@ -25,11 +27,11 @@ public class Item {
         this.title = title;
     }
 
-    public List<Item> getChildren() {
+    public List<ItemDto> getChildren() {
         return children;
     }
 
-    public void setChildren(List<Item> children) {
+    public void setChildren(List<ItemDto> children) {
         this.children = children;
     }
 
@@ -39,5 +41,21 @@ public class Item {
 
     public void setIsContainer(boolean isContainer) {
         this.isContainer = isContainer;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
+
+    public Integer getOriginalTrackNumber() {
+        return originalTrackNumber;
+    }
+
+    public void setOriginalTrackNumber(Integer originalTrackNumber) {
+        this.originalTrackNumber = originalTrackNumber;
     }
 }

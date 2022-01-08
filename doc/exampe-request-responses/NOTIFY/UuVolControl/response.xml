@@ -1,0 +1,164 @@
+<?xml version="1.0" ?>
+<e:propertyset xmlns:e="urn:schemas-upnp-org:event-1-0">
+    <e:property>
+        <Volume>-1</Volume>
+    </e:property>
+    <e:property>
+        <MenuBusy></MenuBusy>
+    </e:property>
+    <e:property>
+        <SpotifyDuration>0</SpotifyDuration>
+    </e:property>
+    <e:property>
+        <DeviceCapabilities>DIGITAL_VOLUME,PLAY_FROM_HERE</DeviceCapabilities>
+    </e:property>
+    <e:property>
+        <UseAlternateServicePack>1</UseAlternateServicePack>
+    </e:property>
+    <e:property>
+        <AudioPhaseInverted>0</AudioPhaseInverted>
+    </e:property>
+    <e:property>
+        <ToneCtrlTreble>0</ToneCtrlTreble>
+    </e:property>
+    <e:property>
+        <MediaQueueIndex>8</MediaQueueIndex>
+    </e:property>
+    <e:property>
+        <MenuId>-1</MenuId>
+    </e:property>
+    <e:property>
+        <SpotifyPosition>0</SpotifyPosition>
+    </e:property>
+    <e:property>
+        <SpotifyRepeat>0</SpotifyRepeat>
+    </e:property>
+    <e:property>
+        <PowerState>ON</PowerState>
+    </e:property>
+    <e:property>
+        <BrightnessLevel>2</BrightnessLevel>
+    </e:property>
+    <e:property>
+        <DeferredXML></DeferredXML>
+    </e:property>
+    <e:property>
+        <SpotifyShuffle>0</SpotifyShuffle>
+    </e:property>
+    <e:property>
+        <SpotifyPlaying>0</SpotifyPlaying>
+    </e:property>
+    <e:property>
+        <CurrentPlaylistTrackID>8</CurrentPlaylistTrackID>
+    </e:property>
+    <e:property>
+        <ToneCtrlBass>0</ToneCtrlBass>
+    </e:property>
+    <e:property>
+        <AudioSourcesByZone></AudioSourcesByZone>
+    </e:property>
+    <e:property>
+        <IdleMode>0</IdleMode>
+    </e:property>
+    <e:property>
+        <AudioSourceList>0,10,24</AudioSourceList>
+    </e:property>
+    <e:property>
+        <AudioFilter>LINEAR_PHASE</AudioFilter>
+    </e:property>
+    <e:property>
+        <IsMuted>0</IsMuted>
+    </e:property>
+    <e:property>
+        <AudioFilterList></AudioFilterList>
+    </e:property>
+    <e:property>
+        <ZonesTiedTogether>0</ZonesTiedTogether>
+    </e:property>
+    <e:property>
+        <VolumeControl>0</VolumeControl>
+    </e:property>
+    <e:property>
+        <PlaylistLength>14</PlaylistLength>
+    </e:property>
+    <e:property>
+        <AudioSourceNumber>10</AudioSourceNumber>
+    </e:property>
+    <e:property>
+        <CurrentServicePack>Unknown</CurrentServicePack>
+    </e:property>
+    <e:property>
+        <AudioSource>Internet radio</AudioSource>
+    </e:property>
+    <e:property>
+        <NavigatorStatusXML>&lt;reciva&gt;&lt;navigators&gt;&lt;navigator id="ca5c2a18-e220-4369-8586-73d835bd9f16"&gt;&lt;status&gt;&lt;/status&gt;
+            &lt;last-message id="0"&gt;&lt;/last-message&gt;
+            &lt;/navigator&gt;
+            &lt;navigator id="198f1dd7-49d6-4d1c-9cab-bd166565c0f5"&gt;&lt;status&gt;&lt;/status&gt;
+            &lt;last-message id="1"&gt;Toegevoegd aan wachtrij&lt;/last-message&gt;
+            &lt;/navigator&gt;
+            &lt;/navigators&gt;
+            &lt;/reciva&gt;
+        </NavigatorStatusXML>
+    </e:property>
+    <e:property>
+        <PowerStatesByZone></PowerStatesByZone>
+    </e:property>
+    <e:property>
+        <SpotifyStatusXML></SpotifyStatusXML>
+    </e:property>
+    <e:property>
+        <MenuXML>&lt;reciva&gt;&lt;navigators&gt;&lt;navigator id="ca5c2a18-e220-4369-8586-73d835bd9f16"&gt;&lt;menu
+            id="6" atTop="1"&gt;&lt;name&gt;Home&lt;/name&gt;
+            &lt;items count="6"&gt;&lt;itemDto id="0" type="menu" icon="AIRABLE"&gt;Radio&lt;/itemDto&gt;
+            &lt;itemDto id="1" type="menu" icon="MEDIALIBRARY"&gt;Muziekbibliotheek&lt;/itemDto&gt;
+            &lt;itemDto id="3" type="function" icon="SPOTIFY"&gt;Spotify&lt;/itemDto&gt;
+            &lt;itemDto id="4" type="function" icon="PRESET_MENU"&gt;Voorkeuze stations&lt;/itemDto&gt;
+            &lt;itemDto id="5" type="menu" icon="CONFIGURE"&gt;Instellingen&lt;/itemDto&gt;
+            &lt;/items&gt;
+            &lt;/menu&gt;
+            &lt;/navigator&gt;
+            &lt;navigator id="198f1dd7-49d6-4d1c-9cab-bd166565c0f5"&gt;&lt;menu id="6" atTop="1"&gt;&lt;name&gt;Home&lt;/name&gt;
+            &lt;items count="6"&gt;&lt;itemDto id="0" type="menu" icon="AIRABLE"&gt;Radio&lt;/itemDto&gt;
+            &lt;itemDto id="1" type="menu" icon="MEDIALIBRARY"&gt;Muziekbibliotheek&lt;/itemDto&gt;
+            &lt;itemDto id="3" type="function" icon="SPOTIFY"&gt;Spotify&lt;/itemDto&gt;
+            &lt;itemDto id="4" type="function" icon="PRESET_MENU"&gt;Voorkeuze stations&lt;/itemDto&gt;
+            &lt;itemDto id="5" type="menu" icon="CONFIGURE"&gt;Instellingen&lt;/itemDto&gt;
+            &lt;/items&gt;
+            &lt;/menu&gt;
+            &lt;/navigator&gt;
+            &lt;/navigators&gt;
+            &lt;/reciva&gt;
+        </MenuXML>
+    </e:property>
+    <e:property>
+        <PlaybackXML>&lt;reciva&gt;&lt;playback-details&gt;&lt;state&gt;Paused&lt;/state&gt;
+            &lt;format codec="MP3" sample-rate="44100" vbr="0" bit-rate="320000" bit-depth="16"&gt;&lt;/format&gt;
+            &lt;playlist-entry&gt;&lt;artist&gt;Teena Marie&lt;/artist&gt;
+            &lt;album&gt;Irons In The Fire&lt;/album&gt;
+            &lt;duration&gt;431&lt;/duration&gt;
+            &lt;title&gt;Chains&lt;/title&gt;
+            &lt;/playlist-entry&gt;
+            &lt;stream type="MediaStream"&gt;&lt;url&gt;file:///tmp/usm/2/Teena%20Marie/1980%20-%20Irons%20In%20The%20Fire/05%20Teena%20Marie%20-%20Chains.mp3&lt;/url&gt;
+            &lt;title&gt;Chains&lt;/title&gt;
+            &lt;source-type&gt;3&lt;/source-type&gt;
+            &lt;source-name&gt;SANDISK&lt;/source-name&gt;
+            &lt;duration&gt;431&lt;/duration&gt;
+            &lt;/stream&gt;
+            &lt;/playback-details&gt;
+            &lt;/reciva&gt;
+        </PlaybackXML>
+    </e:property>
+    <e:property>
+        <CurrentMenuXML></CurrentMenuXML>
+    </e:property>
+    <e:property>
+        <StationId>-1</StationId>
+    </e:property>
+    <e:property>
+        <LastChangedAudioSourceName></LastChangedAudioSourceName>
+    </e:property>
+    <e:property>
+        <IsUpgradeAvailable>0</IsUpgradeAvailable>
+    </e:property>
+</e:propertyset>

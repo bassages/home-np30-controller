@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<e:propertyset xmlns:e="urn:schemas-upnp-org:event-1-0">
+    <e:property>
+        <SystemUpdateID>1</SystemUpdateID>
+    </e:property>
+    <e:property>
+        <ContainerUpdateIDs>0:0,0</ContainerUpdateIDs>
+    </e:property>
+</e:propertyset>

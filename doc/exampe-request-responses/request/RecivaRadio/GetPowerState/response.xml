@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+            s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <s:Body>
+        <r:GetPowerStateResponse xmlns:r="urn:UuVol-com:service:UuVolControl:5">
+            <RetPowerStateValue>ON</RetPowerStateValue>
+        </r:GetPowerStateResponse>
+    </s:Body>
+</s:Envelope>

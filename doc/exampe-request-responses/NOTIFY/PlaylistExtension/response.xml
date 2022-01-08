@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<e:propertyset xmlns:e="urn:schemas-upnp-org:event-1-0">
+    <e:property>
+        <IdArray>AFoE+ABaCwgAWglAAFnq4ABI81gATfsoAEfcoABDRvgAUeCYAEMSEABRabgAVkAAAEqLsABaCNg=</IdArray>
+    </e:property>
+    <e:property>
+        <TracksMax>0</TracksMax>
+    </e:property>
+    <e:property>
+        <Shuffle>0</Shuffle>
+    </e:property>
+    <e:property>
+        <Repeat>0</Repeat>
+    </e:property>
+</e:propertyset>

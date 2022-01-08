@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+            s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <s:Body>
+        <r:GetPositionInfoResponse xmlns:r="urn:schemas-upnp-org:service:AVTransport:1">
+            <Track>1</Track>
+            <TrackDuration>0:07:11</TrackDuration>
+            <TrackMetaData>&lt;DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/"
+                xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp/"&gt;&lt;itemDto&gt;&lt;upnp:album&gt;Irons
+                In The Fire&lt;/upnp:album&gt;
+                &lt;upnp:artist&gt;Teena Marie&lt;/upnp:artist&gt;
+                &lt;upnp:originalTrackNumber&gt;5&lt;/upnp:originalTrackNumber&gt;
+                &lt;res duration="0:07:11.000"&gt;&lt;/res&gt;
+                &lt;dc:title&gt;Chains&lt;/dc:title&gt;
+                &lt;upnp:class&gt;object.itemDto.audioItem.musicTrack&lt;/upnp:class&gt;
+                &lt;/itemDto&gt;
+                &lt;/DIDL-Lite&gt;
+            </TrackMetaData>
+            <TrackURI>
+                file:///tmp/usm/2/Teena%20Marie/1980%20-%20Irons%20In%20The%20Fire/05%20Teena%20Marie%20-%20Chains.mp3
+            </TrackURI>
+            <RelTime>0:05:08</RelTime>
+            <AbsTime>0:05:08</AbsTime>
+            <RelCount>2147483647</RelCount>
+            <AbsCount>2147483647</AbsCount>
+        </r:GetPositionInfoResponse>
+    </s:Body>
+</s:Envelope>

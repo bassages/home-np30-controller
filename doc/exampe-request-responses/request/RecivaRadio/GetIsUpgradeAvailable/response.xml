@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+            s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <s:Body>
+        <r:GetIsUpgradeAvailableResponse xmlns:r="urn:UuVol-com:service:UuVolControl:5">
+            <RetIsUpgradeAvailable>0</RetIsUpgradeAvailable>
+        </r:GetIsUpgradeAvailableResponse>
+    </s:Body>
+</s:Envelope>

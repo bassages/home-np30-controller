@@ -8,8 +8,9 @@
     DashboardController.$inject = ['$interval', '$http', '$log', 'LoadingIndicatorService'];
 
     function DashboardController($interval, $http, $log, LoadingIndicatorService) {
-        var vm = this;
+        const vm = this;
 
+        vm.currentFolderId = "0:0";
         vm.breadcrumb = [];
         vm.alerts = [];
         vm.selectBreadcrumb = selectBreadcrumb;
@@ -22,12 +23,14 @@
         vm.closeAlert = closeAlert;
         vm.skipPrevious = skipPrevious;
         vm.skipNext = skipNext;
+        vm.playPause = playPause;
         vm.getPlaybackDetails = getPlaybackDetails;
 
-        vm.navigateDown("0:0");
+        vm.navigateDown(vm.currentFolderId);
 
         vm.refreshCacheStatusAlert = null;
         vm.playbackDetailsAlert = null;
+        vm.state = null;
 
         $interval(function () {
             updateRefreshCacheStatus();
@@ -46,12 +49,8 @@
             }
         }
 
-        function updatePlaybackDetailsAlert(artist, title, album) {
-            vm.playbackDetailsAlert = {
-                artist: artist,
-                title: title,
-                album: album
-            };
+        function updatePlaybackDetailsAlert(data) {
+            vm.playbackDetailsAlert = data;
         }
         function updateRefreshCacheStatus() {
             $http({
@@ -75,10 +74,12 @@
                 method: 'GET', url: 'api/playback-details'
             }).then(function successCallback(response) {
                 if (response.data && response.data) {
-                    updatePlaybackDetailsAlert(response.data.artist, response.data.title, response.data.album);
+                    updatePlaybackDetailsAlert(response.data);
+                    vm.state = response.data.state;
                 } else {
                     closeAlert(vm.alerts.indexOf(vm.playbackDetailsAlert));
                     vm.playbackDetailsAlert = null;
+                    vm.state = null;
                 }
             }, function errorCallback(response) {
                 $log.error(angular.toJson(response));
@@ -91,16 +92,10 @@
             }
         }
 
-        function navigateUp() {
-            var current = vm.breadcrumb.pop();
-            var parentOfCurrent = vm.breadcrumb.pop();
-            vm.navigateDown(parentOfCurrent.id);
-        }
-
         function getContent(items, onlyFolders) {
-            var folders = [];
-            for (var key in items) {
-                var item = items[key];
+            const folders = [];
+            for (const key in items) {
+                const item = items[key];
                 if (item.container === onlyFolders) {
                     folders.push(item);
                 }
@@ -112,21 +107,25 @@
             while (vm.breadcrumb[vm.breadcrumb.length-1].id != item.id) {
                 vm.breadcrumb.pop();
             }
-            var parentOfCurrent = vm.breadcrumb.pop();
+            const parentOfCurrent = vm.breadcrumb.pop();
             vm.navigateDown(parentOfCurrent.id);
         }
 
         function detailsTitle() {
-            var result = "-";
             if (vm.itemsInSelectedFolder && vm.itemsInSelectedFolder.length > 0) {
-                result = vm.breadcrumb[vm.breadcrumb.length-1].title;
+                return vm.breadcrumb[vm.breadcrumb.length-1].title;
+            } else {
+                return "-";
             }
-            return result;
+        }
+
+        function navigateUp() {
+            const parentOfCurrent = vm.breadcrumb.pop();
+            vm.navigateDown(parentOfCurrent.id);
         }
 
         function navigateDown(folderId) {
-            $log.info("Load folderId=" + folderId);
-
+            vm.currentFolderId = folderId;
             LoadingIndicatorService.startLoading();
             $http({
                 method: 'GET', url: 'api/folder/' + folderId
@@ -171,12 +170,22 @@
             });
         }
 
+        function playPause() {
+            $log.info("PlayPause");
+            $http({
+                method: 'POST', url: 'api/play-pause'
+            }).then(function successCallback(response) {
+                LoadingIndicatorService.stopLoading();
+            }, function errorCallback(response) {
+                LoadingIndicatorService.stopLoading();
+                $log.error(angular.toJson(response));
+            });
+        }
+
         function playCurrentFolder() {
             LoadingIndicatorService.startLoading();
 
-            const folderId = vm.breadcrumb[vm.breadcrumb.length-1].id;
-
-            $log.info("Play folder with id " + folderId);
+            $log.info("Play folder with id " + vm.currentFolderId);
             $http({
                 method: 'POST', url: 'api/play-folder/' + folderId
             }).then(function successCallback(response) {
@@ -192,7 +201,7 @@
 
             $log.info("Play random folder");
             $http({
-                method: 'POST', url: 'api/play-random-folder'
+                method: 'POST', url: 'api/play-random-folder/' + vm.currentFolderId
             }).then(function successCallback(response) {
                 $log.info(response.data.message);
                 LoadingIndicatorService.stopLoading();

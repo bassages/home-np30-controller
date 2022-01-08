@@ -13,6 +13,10 @@ public class Item {
 
     private String parentId;
 
+    private String duration;
+
+    private Integer originalTrackNumber;
+
     private boolean isContainer;
 
     public String getTitle() {
@@ -29,6 +33,22 @@ public class Item {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
+
+    public Integer getOriginalTrackNumber() {
+        return originalTrackNumber;
+    }
+
+    public void setOriginalTrackNumber(Integer originalTrackNumber) {
+        this.originalTrackNumber = originalTrackNumber;
     }
 
     public String getParentId() {

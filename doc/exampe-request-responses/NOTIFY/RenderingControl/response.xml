@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<e:propertyset xmlns:e="urn:schemas-upnp-org:event-1-0">
+    <e:property>
+        <LastChange>&lt;Event xmlns="urn:schemas-upnp-org:metadata-1-0/ACT_RCS"&gt;&lt;InstanceID val="0"&gt;&lt;A_ARG_TYPE_PresetName
+            val=""&gt;&lt;/A_ARG_TYPE_PresetName&gt;
+            &lt;Mute val="0"&gt;&lt;/Mute&gt;
+            &lt;A_ARG_TYPE_Channel val=""&gt;&lt;/A_ARG_TYPE_Channel&gt;
+            &lt;PresetNameList val=""&gt;&lt;/PresetNameList&gt;
+            &lt;Volume val="28"&gt;&lt;/Volume&gt;
+            &lt;A_ARG_TYPE_InstanceID val="0"&gt;&lt;/A_ARG_TYPE_InstanceID&gt;
+            &lt;VolumeDB val="0"&gt;&lt;/VolumeDB&gt;
+            &lt;Loudness val="0"&gt;&lt;/Loudness&gt;
+            &lt;VolumeMax val="28"&gt;&lt;/VolumeMax&gt;
+            &lt;BalanceDB val="0"&gt;&lt;/BalanceDB&gt;
+            &lt;/InstanceID&gt;
+            &lt;/Event&gt;
+        </LastChange>
+    </e:property>
+</e:propertyset>

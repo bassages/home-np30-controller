@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+            s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <s:Body>
+        <r:IsRegisteredNavigatorNameResponse xmlns:r="urn:UuVol-com:service:UuVolControl:5">
+            <IsRegistered>1</IsRegistered>
+            <RetNavigatorId>198f1dd7-49d6-4d1c-9cab-bd166565c0f5</RetNavigatorId>
+        </r:IsRegisteredNavigatorNameResponse>
+    </s:Body>
+</s:Envelope>

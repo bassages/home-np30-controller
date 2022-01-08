@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<e:propertyset xmlns:e="urn:schemas-upnp-org:event-1-0">
+    <e:property>
+        <CurrentConnectionIDs></CurrentConnectionIDs>
+    </e:property>
+    <e:property>
+        <SourceProtocolInfo></SourceProtocolInfo>
+    </e:property>
+    <e:property>
+        <SinkProtocolInfo>
+            http-get:*:audio/L16:DLNA.ORG_PN=LPCM,http-get:*:audio/mpeg:DLNA.ORG_PN=MP3,http-get:*:audio/mpegurl:*,http-get:*:audio/x-ms-wma:*,http-get:*:audio/L16:*,http-get:*:audio/mpeg:*,http-get:*:audio/*:*
+        </SinkProtocolInfo>
+    </e:property>
+</e:propertyset>

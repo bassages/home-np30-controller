@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+            s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <s:Body>
+        <r:GetCurrentServicePackResponse xmlns:r="urn:UuVol-com:service:UuVolControl:5">
+            <RetCurrentServicePackValue>v270-a-012</RetCurrentServicePackValue>
+        </r:GetCurrentServicePackResponse>
+    </s:Body>
+</s:Envelope>

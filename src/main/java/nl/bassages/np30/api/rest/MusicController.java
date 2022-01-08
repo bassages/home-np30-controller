@@ -1,14 +1,13 @@
 package nl.bassages.np30.api.rest;
 
+import nl.bassages.np30.api.dto.ItemDto;
 import nl.bassages.np30.api.dto.Message;
 import nl.bassages.np30.domain.Item;
+import nl.bassages.np30.domain.PlayBackDetails;
 import nl.bassages.np30.repository.ItemRepo;
 import nl.bassages.np30.service.MusicService;
-import nl.bassages.np30.service.PlayBackDetails;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,41 +18,37 @@ public class MusicController {
     private final MusicService musicService;
     private final ItemRepo itemRepo;
 
-    @Autowired
     public MusicController(MusicService musicService, ItemRepo itemRepo) {
         this.musicService = musicService;
         this.itemRepo = itemRepo;
     }
 
     @PostMapping("/play-folder/{folder-id}")
-    public void playFolderNow(@PathVariable("folder-id") String folderId) throws IOException {
-        final Item folder = itemRepo.findById(folderId).get();
-        musicService.playFolderNow(folder);
+    public void playFolderNow(@PathVariable("folder-id") String folderId) {
+        itemRepo.findById(folderId)
+                .ifPresent(musicService::playFolderNow);
     }
 
     @GetMapping( "/folder/{folder-id}")
-    public nl.bassages.np30.api.dto.Item getFolder(@PathVariable("folder-id") String folderId) {
-        nl.bassages.np30.api.dto.Item result = null;
-
-        Item folder = itemRepo.findById(folderId).get();
-        if (folder != null) {
-            List<nl.bassages.np30.api.dto.Item> childrenOfFolder = new ArrayList<>();
-            List<Item> itemsInFolder = itemRepo.findByParentId(folderId);
-            for(Item child : itemsInFolder) {
-                nl.bassages.np30.api.dto.Item item = map(child);
-                childrenOfFolder.add(item);
-            }
-
-            result = map(folder);
-            result.setChildren(childrenOfFolder);
-        }
-        return result;
+    public ItemDto getFolder(@PathVariable("folder-id") String folderId) {
+        return itemRepo.findById(folderId)
+                .map(folder -> {
+                    List<ItemDto> childrenOfFolder = new ArrayList<>();
+                    List<Item> itemsInFolder = itemRepo.findByParentId(folderId);
+                    for (Item child : itemsInFolder) {
+                        ItemDto itemDto = map(child);
+                        childrenOfFolder.add(itemDto);
+                    }
+                    ItemDto result = map(folder);
+                    result.setChildren(childrenOfFolder);
+                    return result;
+                }).orElse(null);
     }
 
-    @PostMapping("/play-random-folder")
-    public Message randomFolder() throws IOException {
+    @PostMapping("/play-random-folder/{folder-id}")
+    public Message randomFolder(@PathVariable("folder-id") String folderId) {
         Message result = new Message();
-        result.setMessage(musicService.playRandomFolderNow());
+        result.setMessage(musicService.playRandomFolderNow(folderId));
         return result;
     }
 
@@ -73,29 +68,39 @@ public class MusicController {
     }
 
     @PostMapping("/skip-next")
-    public Message playNext() throws IOException {
+    public Message playNext() {
         Message result = new Message();
         result.setMessage(musicService.skipNext());
         return result;
     }
 
     @PostMapping("/skip-previous")
-    public Message skipPrevious() throws IOException {
+    public Message skipPrevious() {
         Message result = new Message();
         result.setMessage(musicService.skipPrevious());
         return result;
     }
+
+    @PostMapping("/play-pause")
+    public Message pause() {
+        Message result = new Message();
+        result.setMessage(musicService.playPause());
+        return result;
+    }
+
 
     @GetMapping("/playback-details")
     public PlayBackDetails info() throws Exception {
         return musicService.getPlaybackDetails();
     }
 
-    private nl.bassages.np30.api.dto.Item map(Item item) {
-        nl.bassages.np30.api.dto.Item result = new nl.bassages.np30.api.dto.Item();
-        result.setTitle(item.getTitle());
+    private ItemDto map(Item item) {
+        ItemDto result = new ItemDto();
         result.setId(item.getId());
         result.setIsContainer(item.isContainer());
+        result.setOriginalTrackNumber(item.getOriginalTrackNumber());
+        result.setTitle(item.getTitle());
+        result.setDuration(item.getDuration());
         return result;
     }
 }

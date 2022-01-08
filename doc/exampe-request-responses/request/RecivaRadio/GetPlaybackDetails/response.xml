@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+            s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <s:Body>
+        <r:GetPlaybackDetailsResponse xmlns:r="urn:UuVol-com:service:UuVolControl:5">
+            <RetPlaybackXML>&lt;reciva&gt;&lt;playback-details&gt;&lt;state&gt;Paused&lt;/state&gt;
+                &lt;format codec="MP3" sample-rate="44100" vbr="0" bit-rate="320000" bit-depth="16"&gt;&lt;/format&gt;
+                &lt;playlist-entry&gt;&lt;artist&gt;Teena Marie&lt;/artist&gt;
+                &lt;album&gt;Irons In The Fire&lt;/album&gt;
+                &lt;duration&gt;431&lt;/duration&gt;
+                &lt;title&gt;Chains&lt;/title&gt;
+                &lt;/playlist-entry&gt;
+                &lt;stream type="MediaStream"&gt;&lt;url&gt;file:///tmp/usm/2/Teena%20Marie/1980%20-%20Irons%20In%20The%20Fire/05%20Teena%20Marie%20-%20Chains.mp3&lt;/url&gt;
+                &lt;title&gt;Chains&lt;/title&gt;
+                &lt;source-type&gt;3&lt;/source-type&gt;
+                &lt;source-name&gt;SANDISK&lt;/source-name&gt;
+                &lt;duration&gt;431&lt;/duration&gt;
+                &lt;/stream&gt;
+                &lt;/playback-details&gt;
+                &lt;/reciva&gt;
+            </RetPlaybackXML>
+        </r:GetPlaybackDetailsResponse>
+    </s:Body>
+</s:Envelope>

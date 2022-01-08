@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- http://np30:8050/e68f7d3a-302b-4bf2-98b9-15c5ad390f0b/SMSearch/SMSearch.xml -->
+<scpd xmlns="urn:schemas-upnp-org:service-1-0">
+    <specVersion>
+        <major>1</major>
+        <minor>0</minor>
+    </specVersion>
+    <serviceStateTable>
+        <stateVariable sendEvents="no">
+            <name>KeyString</name>
+            <dataType>string</dataType>
+            <defaultValue></defaultValue>
+        </stateVariable>
+    </serviceStateTable>
+    <actionList>
+        <action>
+            <name>KeyPressed</name>
+            <argumentList>
+                <argument>
+                    <name>Key</name>
+                    <direction>in</direction>
+                    <relatedStateVariable>KeyString</relatedStateVariable>
+                </argument>
+                <argument>
+                    <name>Duration</name>
+                    <direction>in</direction>
+                    <relatedStateVariable>KeyString</relatedStateVariable>
+                </argument>
+            </argumentList>
+        </action>
+    </actionList>
+</scpd>

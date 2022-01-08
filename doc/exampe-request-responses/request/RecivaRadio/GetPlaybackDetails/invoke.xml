@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:Envelope s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body>
+        <u:GetPlaybackDetails xmlns:u="urn:UuVol-com:service:UuVolControl:5">
+            <NavigatorId>198f1dd7-49d6-4d1c-9cab-bd166565c0f5</NavigatorId>
+        </u:GetPlaybackDetails>
+    </s:Body>
+</s:Envelope>

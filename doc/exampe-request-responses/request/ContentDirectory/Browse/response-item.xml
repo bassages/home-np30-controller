@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+            s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <s:Body>
+        <r:BrowseResponse xmlns:r="urn:schemas-upnp-org:service:ContentDirectory:1">
+            <Result>&lt;DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/"
+                xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp/"&gt;&lt;container
+                id="0:0_0_0_0" parentID="0:0_0_0" restricted="true"&gt;&lt;upnp:class&gt;object.container&lt;/upnp:class&gt;
+                &lt;dc:title&gt;Artwork&lt;/dc:title&gt;
+                &lt;/container&gt;
+                &lt;item id="0:0_0_0_1" parentID="0:0_0_0" restricted="true"&gt;&lt;upnp:album&gt;Wild And Peaceful&lt;/upnp:album&gt;
+                &lt;upnp:artist&gt;Teena Marie&lt;/upnp:artist&gt;
+                &lt;upnp:originalTrackNumber&gt;1&lt;/upnp:originalTrackNumber&gt;
+                &lt;res duration="0:05:52.000" protocolInfo="*:*:*:*"&gt;file:///tmp/usm/1/Teena%20Marie/1979%20-%20Wild%20And%20Peaceful/01%20Teena%20Marie%20-%20I%27m%20A%20Sucker%20For%20Your%20Love.mp3&lt;/res&gt;
+                &lt;dc:title&gt;I'm A Sucker For Your Love&lt;/dc:title&gt;
+                &lt;upnp:class&gt;object.item.audioItem.musicTrack&lt;/upnp:class&gt;
+                &lt;/item&gt;
+                &lt;item id="0:0_0_0_2" parentID="0:0_0_0" restricted="true"&gt;&lt;upnp:album&gt;Wild And Peaceful&lt;/upnp:album&gt;
+                &lt;upnp:artist&gt;Teena Marie&lt;/upnp:artist&gt;
+                &lt;upnp:originalTrackNumber&gt;2&lt;/upnp:originalTrackNumber&gt;
+                &lt;res duration="0:06:05.000" protocolInfo="*:*:*:*"&gt;file:///tmp/usm/1/Teena%20Marie/1979%20-%20Wild%20And%20Peaceful/02%20Teena%20Marie%20-%20Turnin%27%20Me%20On.mp3&lt;/res&gt;
+                &lt;dc:title&gt;Turnin' Me On&lt;/dc:title&gt;
+                &lt;upnp:class&gt;object.item.audioItem.musicTrack&lt;/upnp:class&gt;
+                &lt;/item&gt;
+                &lt;item id="0:0_0_0_3" parentID="0:0_0_0" restricted="true"&gt;&lt;upnp:album&gt;Wild And Peaceful&lt;/upnp:album&gt;
+                &lt;upnp:artist&gt;Teena Marie&lt;/upnp:artist&gt;
+                &lt;upnp:originalTrackNumber&gt;3&lt;/upnp:originalTrackNumber&gt;
+                &lt;res duration="0:07:30.000" protocolInfo="*:*:*:*"&gt;file:///tmp/usm/1/Teena%20Marie/1979%20-%20Wild%20And%20Peaceful/03%20Teena%20Marie%20-%20Don%27t%20Look%20Back.mp3&lt;/res&gt;
+                &lt;dc:title&gt;Don't Look Back&lt;/dc:title&gt;
+                &lt;upnp:class&gt;object.item.audioItem.musicTrack&lt;/upnp:class&gt;
+                &lt;/item&gt;
+                &lt;item id="0:0_0_0_4" parentID="0:0_0_0" restricted="true"&gt;&lt;upnp:album&gt;Wild And Peaceful&lt;/upnp:album&gt;
+                &lt;upnp:artist&gt;Teena Marie&lt;/upnp:artist&gt;
+                &lt;upnp:originalTrackNumber&gt;4&lt;/upnp:originalTrackNumber&gt;
+                &lt;res duration="0:07:36.000" protocolInfo="*:*:*:*"&gt;file:///tmp/usm/1/Teena%20Marie/1979%20-%20Wild%20And%20Peaceful/04%20Teena%20Marie%20-%20De%20Ja%20Vu%20%28I%27ve%20Been%20Here%20Before%29.mp3&lt;/res&gt;
+                &lt;dc:title&gt;De Ja Vu (I've Been Here Before)&lt;/dc:title&gt;
+                &lt;upnp:class&gt;object.item.audioItem.musicTrack&lt;/upnp:class&gt;
+                &lt;/item&gt;
+                &lt;item id="0:0_0_0_5" parentID="0:0_0_0" restricted="true"&gt;&lt;upnp:album&gt;Wild And Peaceful&lt;/upnp:album&gt;
+                &lt;upnp:artist&gt;Teena Marie&lt;/upnp:artist&gt;
+                &lt;upnp:originalTrackNumber&gt;5&lt;/upnp:originalTrackNumber&gt;
+                &lt;res duration="0:05:30.000" protocolInfo="*:*:*:*"&gt;file:///tmp/usm/1/Teena%20Marie/1979%20-%20Wild%20And%20Peaceful/05%20Teena%20Marie%20-%20I%27m%20Gonna%20Have%20My%20Cake%20%28And%20Eat%20It%20Too%29.mp3&lt;/res&gt;
+                &lt;dc:title&gt;I'm Gonna Have My Cake (And Eat It Too)&lt;/dc:title&gt;
+                &lt;upnp:class&gt;object.item.audioItem.musicTrack&lt;/upnp:class&gt;
+                &lt;/item&gt;
+                &lt;item id="0:0_0_0_6" parentID="0:0_0_0" restricted="true"&gt;&lt;upnp:album&gt;Wild And Peaceful&lt;/upnp:album&gt;
+                &lt;upnp:artist&gt;Teena Marie&lt;/upnp:artist&gt;
+                &lt;upnp:originalTrackNumber&gt;6&lt;/upnp:originalTrackNumber&gt;
+                &lt;res duration="0:07:10.000" protocolInfo="*:*:*:*"&gt;file:///tmp/usm/1/Teena%20Marie/1979%20-%20Wild%20And%20Peaceful/06%20Teena%20Marie%20-%20I%20Can%27t%20Love%20Anymore.mp3&lt;/res&gt;
+                &lt;dc:title&gt;I Can't Love Anymore&lt;/dc:title&gt;
+                &lt;upnp:class&gt;object.item.audioItem.musicTrack&lt;/upnp:class&gt;
+                &lt;/item&gt;
+                &lt;/DIDL-Lite&gt;
+            </Result>
+            <NumberReturned>7</NumberReturned>
+            <TotalMatches>7</TotalMatches>
+            <UpdateID>0</UpdateID>
+        </r:BrowseResponse>
+    </s:Body>
+</s:Envelope>

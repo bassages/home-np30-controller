@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+            s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <s:Body>
+        <r:GetDeviceCapabilitiesResponse xmlns:r="urn:UuVol-com:service:UuVolControl:5">
+            <RetDeviceCapabilities>DIGITAL_VOLUME,PLAY_FROM_HERE</RetDeviceCapabilities>
+        </r:GetDeviceCapabilitiesResponse>
+    </s:Body>
+</s:Envelope>

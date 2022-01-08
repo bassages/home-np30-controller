@@ -260,6 +260,10 @@
 		<xsd:sequence>
 			<xsd:element ref="dc:title"/>
 			<xsd:group ref="upnp:class.group"/>
+			<!-- Added this for NP30Controller to be able to get the duration and url of the item -->
+			<xsd:element name="res" type="didl-lite:res.type"/>
+			<!-- Added this for NP30Controller to be able to get the originalTrackNumber of the item -->
+			<xsd:group ref="upnp:upnpForItem"/>
 		</xsd:sequence>
 		<xsd:attributeGroup ref="didl-lite:commonAttrs-item-container.group"/>
 		<xsd:attribute name="refID" type="av:didl-lite_COLON_at_id.vd.type"/>
